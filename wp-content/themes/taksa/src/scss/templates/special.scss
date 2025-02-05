@@ -1,0 +1,139 @@
+.special{
+  padding: 149px 0;
+  @media all and (max-width: $maxwindow){
+    padding: px(149) 0;
+  }
+  @media all and (max-width: 500px){
+    padding: px(110) 0 px(130) 0;
+  }
+  &__container{
+
+  }
+  &__title{
+    color: #1A2B50;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 96px;
+    @media all and (max-width: $maxwindow){
+      font-size: px(32);
+      margin-bottom: px(96);
+    }
+    @media all and (max-width: 500px){
+      font-size: px(20);
+      margin-bottom: px(11);
+      line-height: 150%;
+    }
+  }
+  &__content{
+    max-width: 884px;
+    margin-left: auto;
+    margin-right: auto;
+    @media all and (max-width: $maxwindow){
+      max-width: px(884);
+    }
+    form{
+      text-align: center;
+      margin-top: 70px;
+      @media all and (max-width: $maxwindow){
+        margin-top: px(70);
+      }
+      p{
+        text-align: center;
+      }
+      input, button{
+        width: 290px;
+        @media all and (max-width: $maxwindow){
+          width: px(290);
+        }
+        @media all and (max-width: 500px){
+          width: 100%;
+        }
+      }
+      .email{
+        height: 65px;
+        padding: 18px 16px;
+        border-radius: 5px;
+        background: #F5FAFF;
+        color: #114BC8;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        border: none;
+        @media all and (max-width: $maxwindow){
+          height: px(65);
+          padding: px(18) px(16);
+          border-radius: px(5);
+          font-size: px(20);
+        }
+        @media all and (max-width: 500px){
+          font-size: px(14);
+        }
+        &::placeholder{
+          color: #4D5B79;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          @media all and (max-width: $maxwindow){
+            font-size: px(20);
+          }
+          @media all and (max-width: 500px){
+            font-size: px(14);
+          }
+        }
+      }
+      .button{
+        margin-top: 20px;
+        color: #FFFFFF;
+        font-size: 20px;
+        height: 65px;
+        @media all and (max-width: $maxwindow){
+          margin-top: px(20);
+          font-size: px(20);
+          height: px(65);
+        }
+        @media all and (max-width: 500px){
+          width: 100%;
+        }
+      }
+    }
+    h2, h3, h4, h5{
+      color: #1A2B50;
+      text-align: center;
+      font-size: 27px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      @media all and (max-width: $maxwindow){
+        font-size: px(27);
+      }
+      @media all and (max-width: 500px){
+        font-size: px(18);
+        margin-bottom: px(20);
+      }
+    }
+    p{
+      color: #1A2B50;
+      text-align: justify;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      @media all and (max-width: $maxwindow){
+        font-size: px(20);
+      }
+      @media all and (max-width: 500px){
+        font-size: px(16);
+        text-align: justify!important;
+      }
+      @media all and (max-width: 440px){
+        font-size: px(12);
+      }
+    }
+  }
+}

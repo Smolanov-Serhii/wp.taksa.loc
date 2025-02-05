@@ -1,0 +1,233 @@
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(26,43,80,0.6);
+  z-index: 100;
+  *{
+    font-family: "Poppins", sans-serif;
+  }
+  &__close{
+    position: absolute;
+    top: 15px;
+    right: 16px;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    z-index: 5;
+    @media all and (max-width: $maxwindow){
+      width: px(34);
+      height: px(34);
+      top: px(16);
+      right: px(16);
+    }
+    @media all and (max-width: 1024px){
+      width: px(24);
+      height: px(24);
+      top: px(10);
+      right: px(10);
+    }
+    @media all and (max-width: 500px){
+      top: px(10);
+      right: px(10);
+    }
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__container{
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 50px 50px 100px 0px rgba(28, 55, 73, 0.10);
+    //padding: 48px 60px;
+    padding: 0 0 40px 0;
+    //width: 916px;
+    width: 1200px;
+    position: relative;
+    max-width: calc(100% - 40px);
+    @media all and (max-width: $maxwindow){
+      //width: px(916);
+      //padding: px(48) px(60);
+      max-width: calc(100% - px(40));
+      padding: 0 0 px(40) 0;
+      border-radius: px(30);
+      box-shadow: px(50) px(50) px(100) 0px rgba(28, 55, 73, 0.10);
+    }
+    @media all and (max-width: 1024px){
+      padding: 0;
+      border-radius: 0;
+      height: 100%;
+      max-width: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .calendly-inline-widget{
+        height: auto;
+        flex: 1!important;
+      }
+    }
+    @media all and (max-width: 768px){
+      padding: px(40);
+    }
+    @media all and (max-width: 500px){
+      padding: px(40) px(20) px(20) px(20);
+      border-radius: px(20);
+    }
+    .wpcf7-submit{
+      width: 100%;
+      color: #F5FAFF;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      @media all and (max-width: $maxwindow){
+        font-size: px(24);
+      }
+      @media all and (max-width: 500px){
+        font-size: px(16);
+        height: px(40);
+      }
+    }
+    h3{
+      color: #1A2B50;
+      text-align: center;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+      @media all and (max-width: $maxwindow){
+        font-size: px(40);
+        margin-bottom: px(60);
+      }
+      @media all and (max-width: 500px){
+        font-size: px(20);
+        margin-bottom: px(20);
+      }
+    }
+    p{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      br{
+        display: none;
+      }
+      label, & > span{
+        width: calc(50% - 8px);
+        margin-bottom: 18px;
+        position: relative;
+        @media all and (max-width: $maxwindow){
+          width: calc(50% - px(8));
+          margin-bottom: px(18);
+        }
+        @media all and (max-width: 768px){
+          width: 100%;
+          margin-bottom: px(10);
+        }
+        span{
+          width: 100%;
+        }
+        .placeholder{
+          color: #4D5B79;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          position: absolute;
+          left: 18px;
+          top: calc(50% - 10px);
+          z-index: 1;
+          @media all and (max-width: $maxwindow){
+            font-size: px(20);
+            left: px(18);
+            top: calc(50% - px(10));
+          }
+          @media all and (max-width: 768px){
+            font-size: px(14);
+          }
+          @media all and (max-width: 500px){
+            font-size: px(12);
+          }
+        }
+        input{
+          height: 60px;
+          width: 100%;
+          padding: 15px 18px;
+          border-radius: 5px;
+          background: #F5FAFF;
+          color: #4D5B79;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          border: none;
+          @media all and (max-width: $maxwindow){
+            height: px(60);
+            padding: px(15) px(18);
+            border-radius: px(5);
+            font-size: px(20);
+          }
+          @media all and (max-width: 768px){
+            font-size: px(14);
+            height: px(50);
+          }
+          @media all and (max-width: 500px){
+            font-size: px(12);
+            height: px(40);
+          }
+          &::placeholder{
+            color: #4D5B79;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            @media all and (max-width: $maxwindow){
+              font-size: px(20);
+            }
+            @media all and (max-width: 768px){
+              font-size: px(14);
+            }
+            @media all and (max-width: 500px){
+              font-size: px(12);
+            }
+          }
+        }
+      }
+    }
+  }
+  &__mail{
+    text-align: center;
+    //margin-top: 35px;
+    margin-top: 0;
+    @media all and (max-width: $maxwindow){
+      //margin-top: px(35);
+    }
+    @media all and (max-width: 768px){
+      margin-top: px(20);
+    }
+    a{
+      color: #1A2B50;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-decoration-line: underline;
+      @media all and (max-width: $maxwindow){
+        font-size: px(24);
+      }
+      @media all and (max-width: 768px){
+        font-size: px(18);
+      }
+      @media all and (max-width: 768px){
+        font-size: px(14);
+      }
+    }
+  }
+}

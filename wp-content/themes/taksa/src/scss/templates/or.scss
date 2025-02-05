@@ -1,0 +1,569 @@
+.or{
+  display: flex;
+  align-items: center;
+  margin: 143px 0 143px 0;
+  @media all and (max-width: $maxwindow){
+    margin: px(143) 0 px(143) 0;
+  }
+  @media all and (max-width: 768px){
+    margin: px(50) 0 px(50) 0;
+  }
+  &__container{
+
+  }
+  &__title{
+    margin-bottom: 60px;
+    @media all and (max-width: $maxwindow){
+      margin-bottom: px(60);
+    }
+    @media all and (max-width: 500px){
+      margin-bottom: px(30);
+    }
+  }
+  &__list{
+
+  }
+  &__group{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    margin-bottom: 30px;
+    @media all and (max-width: $maxwindow){
+      grid-column-gap: px(30);
+      grid-row-gap: px(30);
+      margin-bottom: px(30);
+    }
+    @media all and (max-width: 1200px){
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @media all and (max-width: 768px){
+      gap: px(15);
+      grid-column-gap: px(15);
+      grid-row-gap: px(15);
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__pair{
+    display: flex;
+    gap: 30px;
+    @media all and (max-width: $maxwindow){
+      gap: px(30);
+    }
+    @media all and (max-width: 768px){
+      flex-direction: column;
+      gap: px(15);
+    }
+    &.pair1{
+      grid-area: 1 / 1 / 2 / 3;
+      @media all and (max-width: 1200px){
+        width: 100%;
+      }
+      > div{
+        &:nth-child(1){
+          width: 531px;
+          height: 340px;
+          @media all and (max-width: $maxwindow){
+            width: px(531);
+            height: px(340);
+          }
+          &.hover{
+            width: 598px;
+            height: 340px;
+            @media all and (max-width: $maxwindow){
+              width: px(598);
+              height: px(340);
+            }
+          }
+          &.else-hover{
+            width: 396px;
+            height: 340px;
+            @media all and (max-width: $maxwindow){
+              width: px(396);
+              height: px(340);
+            }
+          }
+        }
+        &:nth-child(2){
+          width: 349px;
+          height: 340px;
+          @media all and (max-width: $maxwindow){
+            width: px(349);
+            height: px(340);
+          }
+          &.hover{
+            width: 484px;
+            height: 340px;
+            @media all and (max-width: $maxwindow){
+              width: px(484);
+              height: px(340);
+            }
+          }
+          &.else-hover{
+            width: 282px;
+            height: 340px;
+            @media all and (max-width: $maxwindow){
+              width: px(282);
+              height: px(340);
+            }
+          }
+        }
+        @media all and (max-width: 1200px){
+          &:nth-child(1){
+            width: 55%;
+            height: px(340);
+            &.hover{
+              width: 60%;
+              height: px(340);
+            }
+            &.else-hover{
+              width: 50%;
+              height: px(340);
+            }
+          }
+          &:nth-child(2){
+            width: 45%;
+            height: px(340);
+            &.hover{
+              width: 50%;
+              height: px(340);
+            }
+            &.else-hover{
+              width: 40%;
+              height: px(340);
+            }
+          }
+        }
+        @media all and (max-width: 768px){
+          &:nth-child(1){
+            width: 100%;
+            height: px(194);
+            &.hover{
+              width: 100%;
+              height: px(194);
+            }
+            &.else-hover{
+              width: 100%;
+              height: px(194);
+            }
+          }
+          &:nth-child(2){
+            width: 100%;
+            height: px(194);
+            &.hover{
+              width: 100%;
+              height: px(194);
+            }
+            &.else-hover{
+              width: 100%;
+              height: px(194);
+            }
+          }
+        }
+      }
+    }
+    &.pair3{
+      grid-area: 2 / 1 / 3 / 3;
+      @media all and (max-width: 1200px){
+        width: 100%;
+      }
+      > div{
+        &:nth-child(1){
+          width: 396px;
+          height: 340px;
+          @media all and (max-width: $maxwindow){
+            width: px(396);
+            height: px(340);
+          }
+          &.hover{
+            width: 485px;
+            height: 340px;
+            @media all and (max-width: $maxwindow){
+              width: px(485);
+              height: px(340);
+            }
+          }
+          &.else-hover{
+            width: 283px;
+            height: 340px;
+            @media all and (max-width: $maxwindow){
+              width: px(283);
+              height: px(340);
+            }
+          }
+        }
+        &:nth-child(2){
+          width: 484px;
+          height: 340px;
+          @media all and (max-width: $maxwindow){
+            width: px(484);
+            height: px(340);
+          }
+          &.hover{
+            width: 597px;
+            height: 340px;
+            @media all and (max-width: $maxwindow){
+              width: px(597);
+              height: px(340);
+            }
+          }
+          &.else-hover{
+            width: 395px;
+            height: 340px;
+            @media all and (max-width: $maxwindow){
+              width: px(395);
+              height: px(340);
+            }
+          }
+        }
+        @media all and (max-width: 1200px){
+          &:nth-child(1){
+            width: 40%;
+            height: px(340);
+            &.hover{
+              width: 60%;
+              height: px(340);
+            }
+            &.else-hover{
+              width: 30%;
+              height: px(340);
+            }
+          }
+          &:nth-child(2){
+            width: 60%;
+            height: px(340);
+            &.hover{
+              width: 70%;
+              height: px(340);
+            }
+            &.else-hover{
+              width: 40%;
+              height: px(340);
+            }
+          }
+        }
+        @media all and (max-width: 768px){
+          &:nth-child(1){
+            width: 100%;
+            height: px(194);
+            &.hover{
+              width: 100%;
+              height: px(194);
+            }
+            &.else-hover{
+              width: 100%;
+              height: px(194);
+            }
+          }
+          &:nth-child(2){
+            width: 100%;
+            height: px(194);
+            &.hover{
+              width: 100%;
+              height: px(194);
+            }
+            &.else-hover{
+              width: 100%;
+              height: px(194);
+            }
+          }
+        }
+      }
+    }
+    &.pair5{
+      grid-area: 1 / 3 / 3 / 4;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      @media all and (max-width: $maxwindow){
+        gap: px(30);
+      }
+      @media all and (max-width: 1200px){
+        width: 100%;
+        flex-direction: row;
+      }
+      @media all and (max-width: 768px){
+        flex-wrap: wrap;
+        gap: px(15);
+      }
+      > div{
+        &:nth-child(1){
+          width: 440px;
+          height: 426px;
+          @media all and (max-width: $maxwindow){
+            width: px(440);
+            height: px(426);
+          }
+          &.hover{
+            width: 440px;
+            height: 500px;
+            @media all and (max-width: $maxwindow){
+              width: px(440);
+              height: px(500);
+            }
+          }
+          &.else-hover{
+            width: 440px;
+            height: 300px;
+            @media all and (max-width: $maxwindow){
+              width: px(440);
+              height: px(300);
+            }
+          }
+        }
+        &:nth-child(2){
+          width: 440px;
+          height: 254px;
+          @media all and (max-width: $maxwindow){
+            width: px(440);
+            height: px(254);
+          }
+          &.hover{
+            width: 440px;
+            height: 380px;
+            @media all and (max-width: $maxwindow){
+              width: px(440);
+              height: px(380);
+            }
+          }
+          &.else-hover{
+            width: 440px;
+            height: 180px;
+            @media all and (max-width: $maxwindow){
+              width: px(440);
+              height: px(180);
+            }
+          }
+        }
+        @media all and (max-width: 1200px){
+          &:nth-child(1){
+            width: 55%;
+            height: px(340);
+            &.hover{
+              width: 60%;
+              height: px(340);
+            }
+            &.else-hover{
+              width: 50%;
+              height: px(340);
+            }
+          }
+          &:nth-child(2){
+            width: 45%;
+            height: px(340);
+            &.hover{
+              width: 50%;
+              height: px(340);
+            }
+            &.else-hover{
+              width: 40%;
+              height: px(340);
+            }
+          }
+        }
+        @media all and (max-width: 768px){
+          &:nth-child(1){
+            width: 100%;
+            height: px(194);
+            &.hover{
+              width: 100%;
+              height: px(194);
+            }
+            &.else-hover{
+              width: 100%;
+              height: px(194);
+            }
+          }
+          &:nth-child(2){
+            width: 100%;
+            height: px(194);
+            &.hover{
+              width: 100%;
+              height: px(194);
+            }
+            &.else-hover{
+              width: 100%;
+              height: px(194);
+            }
+          }
+        }
+      }
+    }
+  }
+  &__item{
+    position: relative;
+    border-radius: 32px;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    z-index: 1;
+    @media all and (max-width: $maxwindow){
+      border-radius: px(32);
+    }
+    @media all and (max-width: 768px){
+      border-radius: px(10);
+    }
+    @media all and (min-width: 1024px){
+      &:hover{
+        .or__item-img{
+          img{
+            transform: scale(1.2);
+          }
+          &:after{
+            opacity: 0.5;
+          }
+        }
+        .or__item-lnk{
+          opacity: 1;
+        }
+      }
+    }
+    @media all and (max-width: 1023px){
+      &.visible{
+        .or__item-img{
+          img{
+            transform: scale(1.2);
+          }
+          &:after{
+            opacity: 0.5;
+          }
+        }
+        .or__item-lnk{
+          opacity: 1;
+        }
+      }
+    }
+    &-full{
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+    &-title{
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 150%;
+      position: absolute;
+      left: 45px;
+      bottom: 30px;
+      @media all and (max-width: $maxwindow){
+        font-size: px(24);
+        left: px(45);
+        bottom: px(30);
+      }
+      @media all and (max-width: 500px){
+        font-size: px(14);
+        left: px(20);
+        bottom: px(15);
+      }
+    }
+    &-lnk{
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 400;
+      right: 30px;
+      bottom: 40px;
+      position: absolute;
+      transition: 0.3s ease-in-out;
+      text-decoration: none;
+      opacity: 0;
+      display: inline-flex;
+      align-items: center;
+      z-index: 3;
+      @media all and (max-width: $maxwindow){
+        font-size: px(16);
+        right: px(30);
+        bottom: px(40);
+      }
+      @media all and (max-width: 1024px){
+        color: transparent;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      &:hover{
+        text-decoration: underline;
+      }
+      svg{
+        margin-left: 15px;
+        width: 12px;
+        height: 14px;
+        @media all and (max-width: $maxwindow){
+          margin-left: px(15);
+          width: px(12);
+          height: px(14);
+        }
+        @media all and (max-width: 1024px){
+          display: none;
+        }
+      }
+    }
+    &-img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      &:after{
+        content: "";
+        background: linear-gradient(180deg, rgba(26, 43, 80, 0.00) 0%, rgba(26, 43, 80, 0.60) 100%);
+        background-blend-mode: multiply, normal, normal;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s ease-in-out;
+      }
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+  &__buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    @media all and (max-width: $maxwindow){
+      margin-top: px(60);
+    }
+    .button{
+      position: relative;
+      width: 290px;
+      @media all and (max-width: $maxwindow){
+        width-size: px(290);
+      }
+      span{
+        font-size: 20px;
+        @media all and (max-width: $maxwindow){
+          font-size: px(20);
+        }
+      }
+      svg{
+        position: absolute;
+      }
+    }
+
+  }
+}
+.page-template-results{
+  .or__item-lnk{
+    @media all and (max-width: 1024px){
+      display: none;
+    }
+  }
+}

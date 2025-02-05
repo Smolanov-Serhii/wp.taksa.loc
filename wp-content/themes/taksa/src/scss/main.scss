@@ -1,0 +1,127 @@
+/* Base */
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/fontsAutoGen';
+@import './base/base';
+@import './base/docs'; /* Отключить при необходимости */
+@import './base/utils'; // Тест на ошибку
+@import './base/containers';
+@import './base/sticky-footer';
+
+/* Blocks */
+//@import './blocks/*.scss';
+
+/* No styles code below. Only in modules */
+/* Не пишите CSS код ниже. Только в подключаемых файлах */
+table{
+  margin-top: 20px;
+}
+:root {
+  --primary-text: black;
+  --secondary-text: #e9fff3;
+  --white-text-white: #ffffff;
+  --black-text-black: #000000;
+}
+
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--secondary-text);
+  border-radius: 100px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary-text);
+  border-radius: 100px;
+}
+.accordion-body{
+  img{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 440px;
+    width: 100%;
+  }
+}
+.faq-section .accordion {
+  width: 100%;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #FFBB00!important;
+  h5{
+    color: white!important;
+  }
+
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  transform: none;
+  display: none;
+}
+.accordion-button{
+
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:before {
+  content: "";
+  position: absolute;
+  /*   right: 0.75rem; */
+  right: 0.75rem;
+  top: 1.25rem;
+  height: 2px;
+  width: 1rem;
+  background-color: var(--primary-text);
+}
+.accordion-button.collapsed:after {
+  content: "";
+  position: absolute;
+  /*   right: 1.1875rem; */
+  right: 1.1875rem;
+  top: 0.8125rem;
+  height: 1.0625rem;
+  width: 0.125rem;
+  border-style: none;
+  background-color: var(--primary-text);
+}
+
+.faq-section .accordion-button h5 {
+  /*   color: #7dbc9e; */
+  color: var(--primary-text);
+  margin-right: 13px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.accordion-body {
+  background-color: rgba(255,187,0, 0.10);
+}
+/* button:focus:not(:focus-visible) {
+    outline: 0;
+} */
+
+@media screen and (min-width: 768px) {
+  /*   .faq-section .accordion {
+    width: 50%;
+    margin: 0 auto;
+  } */
+
+  .accordion-button:before {
+    right: 0.75rem;
+  }
+
+  .accordion-button.collapsed:after {
+    right: 1.1875rem;
+  }
+
+  .faq-section .accordion-button h5 {
+    margin-right: 0px;
+  }
+}

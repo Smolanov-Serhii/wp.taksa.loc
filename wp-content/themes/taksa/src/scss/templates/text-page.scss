@@ -1,0 +1,82 @@
+.text-page{
+  padding: 170px 0;
+  @media all and (max-width: $maxwindow){
+    padding: px(170) 0;
+  }
+  @media all and (max-width: 500px){
+    padding: px(110) 0 px(130) 0;
+  }
+  &__container{
+
+  }
+  &__title{
+    text-align: center;
+    color: #1A2B50;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0;
+    @media all and (max-width: $maxwindow){
+      font-size: px(32);
+    }
+    @media all and (max-width: 500px){
+      font-size: px(20);
+      margin-bottom: px(11);
+      line-height: 150%;
+    }
+  }
+  &__subtitle{
+    text-align: center;
+    color: #1A2B50;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @media all and (max-width: $maxwindow){
+      font-size: px(20);
+    }
+    @media all and (max-width: 500px){
+      font-size: px(16);
+    }
+  }
+  &__content{
+    margin-top: 40px;
+    text-align: left;
+    @media all and (max-width: $maxwindow){
+      margin-top: px(40);
+    }
+    h2,h3,h4,h5{
+      color: #1A2B50;
+      font-size: 27px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      @media all and (max-width: $maxwindow){
+        font-size: px(27);
+      }
+      @media all and (max-width: 500px){
+        font-size: px(18);
+      }
+    }
+    p, li, span{
+      color: #1A2B50;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      @media all and (max-width: $maxwindow){
+        font-size: px(20);
+      }
+      @media all and (max-width: 500px){
+        font-size: px(14);
+      }
+      strong, b{
+        font-weight: bolder;
+      }
+    }
+    p{
+      margin-bottom: 1em;
+    }
+  }
+}

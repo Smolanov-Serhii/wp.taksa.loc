@@ -1,0 +1,197 @@
+.banner{
+  height: 100vh;
+  background-color: #F5FAFF;
+  display: flex;
+  align-items: center;
+  position: relative;
+  @media all and (max-width: 991px){
+    padding-top: 12vh;
+    height: auto;
+  }
+  @media all and (max-width: 991px){
+    padding-bottom: 5vh;
+    min-height: 100vh;
+  }
+  @media all and (max-width: 500px){
+    background: linear-gradient(0deg, #F5FAFF 55.63%, rgba(255, 255, 255, 0.00) 92.72%);
+  }
+  &__container{
+    display: flex;
+    align-items: center;
+    @media all and (max-width: 1200px){
+      flex-wrap: wrap;
+    }
+  }
+  &__text{
+    width: 50%;
+    @media all and (max-width: 1580px){
+      position: relative;
+      z-index: 2;
+    }
+    @media all and (max-width: 1200px){
+      width: 100%;
+    }
+    @media all and (max-width: 991px){
+      position: static;
+      text-align: center;
+    }
+    @media all and (max-width: 500px){
+      text-align: left;
+    }
+  }
+  &__animate{
+    position: absolute;
+    top: 0;
+    right: calc((100vw - 1920px) / 2 + 200px);
+    height: 100%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    @media all and (max-width: $maxwindow){
+      width: px(800);
+      right: px(200);
+    }
+    @media all and (max-width: 1600px){
+      right: px(170);
+    }
+    @media all and (max-width: 1439px){
+      right: px(30);
+    }
+    @media all and (max-width: 991px){
+      width: 100%;
+      position: static;
+      justify-content: center;
+    }
+    @media all and (max-width: 500px){
+      margin-right: px(-20);
+      margin-left: px(-20);
+      width: calc(100% + px(40));
+      height: 50vh;
+      img{
+        margin-top: -7vh;
+        margin-bottom: -2vh;
+        width: auto;
+        height: 100%;
+      }
+      picture{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+      ;
+      }
+    }
+    canvas, spline-viewer{
+      width: 800px!important;
+      height: 800px!important;
+      @media all and (max-width: $maxwindow){
+        width: px(800) !important;
+        height: px(800) !important;
+      }
+      @media all and (max-width: 768px){
+        width: calc(100vw - px(40)) !important;
+        height: calc(100vw - px(40)) !important;
+      }
+    }
+  }
+  &__title{
+    @media all and (max-width: 991px){
+      text-align: center;
+    }
+    @media all and (max-width: 500px){
+      font-size: px(27);
+      text-align: left;
+      br{
+        display: none;
+      }
+      margin-bottom: 2vh;
+    }
+  }
+  &__subtitle{
+    padding-left: 55px;
+    position: relative;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 300;
+    @media all and (max-width: $maxwindow){
+      font-size: px(20);
+      padding-left: px(55);
+    }
+    @media all and (max-width: 991px){
+      display: inline-block;
+    }
+    @media all and (max-width: 500px){
+      display: block;
+      padding-left: 0;
+      font-size: px(14);
+      margin-bottom: 2vh;
+    }
+    > svg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 32px;
+      height: auto;
+      @media all and (max-width: $maxwindow){
+        width: px(32);
+      }
+      @media all and (max-width: 500px){
+        width: px(25);
+        position: static;
+        margin-bottom: px(14);
+        display: block;
+      }
+    }
+  }
+  &__button{
+    width: 100%;
+    margin-top: 53px;
+    display: inline-block;
+    @media all and (max-width: $maxwindow){
+      margin-top: px(53);
+    }
+    @media all and (max-width: 991px){
+      position: absolute;
+      bottom: px(45);
+      left: px(45);
+      width: calc(100% - px(90));
+    }
+    @media all and (max-width: 768px){
+      position: fixed;
+      z-index: 10;
+      transition: 0s;
+    }
+    @media all and (max-width: 500px){
+      left: px(20);
+      width: calc(100% - px(40));
+    }
+    .button{
+      width: 290px;
+      @media all and (max-width: $maxwindow){
+        width: px(290);
+      }
+      &.trigger{
+        opacity: 0;
+        pointer-events: none;
+      }
+      @media all and (max-width: 768px){
+        transition: 0s;
+      }
+      @media all and (max-width: 500px){
+        text-align: center;
+        width: 100%;
+      }
+      span{
+        font-size: 20px;
+        @media all and (max-width: $maxwindow){
+          font-size: px(20);
+        }
+        @media all and (max-width: 768px){
+          transition: 0s;
+          font-size: px(20);
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

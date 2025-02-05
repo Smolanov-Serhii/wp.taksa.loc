@@ -1,0 +1,197 @@
+.portfolio-all{
+  padding: 149px 0;
+  @media all and (max-width: $maxwindow){
+    padding: px(149) 0;
+  }
+  @media all and (max-width: 500px){
+    padding-top: px(110);
+    padding-bottom: px(54);
+  }
+  &__container{
+
+  }
+  .pagination{
+    height: auto!important;
+  }
+  .header__buttons{
+    position: static;
+    width: 100%;
+    margin-top: px(35);
+    a{
+      margin: auto;
+      min-width: px(350);
+      @media all and (max-width: 500px){
+        width: 100%;
+        min-width: auto;
+      }
+    }
+  }
+  &__title{
+    text-align: center;
+    text-transform: uppercase;
+    color: #1A2B50;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 20px;
+    @media all and (max-width: $maxwindow){
+      font-size: px(32);
+      margin-bottom: px(20);
+    }
+    @media all and (max-width: 500px){
+      font-size: px(20);
+      margin-bottom: px(11);
+    }
+  }
+  &__subtitle{
+    color: #1A2B50;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: normal;
+    @media all and (max-width: $maxwindow){
+      font-size: px(16);
+      margin-bottom: px(30);
+    }
+    @media all and (max-width: 500px){
+      font-size: px(12);
+      margin-bottom: px(24);
+    }
+  }
+  &__filter{
+    margin-bottom: 55px;
+    @media all and (max-width: $maxwindow){
+      margin-bottom: px(55);
+    }
+    @media all and (max-width: 500px) {
+      margin-bottom: px(35);
+    }
+    form{
+      > ul{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    ul{
+      display: flex;
+      align-items: center;
+      li[class*="sf-field-taxonomy"]{
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        @media all and (max-width: $maxwindow){
+          margin-bottom: px(20);
+        }
+        @media all and (max-width: 768px){
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        h4{
+          color: #A2B8E8;
+          font-size: 16px;
+          font-weight: 400;
+          width: 160px;
+          padding: 0;
+          margin-top: 10px;
+          @media all and (max-width: $maxwindow){
+            width: px(160);
+            font-size: px(16);
+            margin-top: px(10);
+          }
+          @media all and (max-width: 768px){
+            margin-bottom: px(10);
+            width: 100%;
+            font-size: px(14);
+            margin-top: 0;
+          }
+        }
+        ul{
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          width: calc(100% - 180px);
+          @media all and (max-width: $maxwindow){
+            width: calc(100% - px(180));
+          }
+          @media all and (max-width: 768px){
+            width: 100%;
+          }
+          @media all and (max-width: 500px){
+            width: 100%;
+            overflow: scroll;
+            padding-bottom: px(4);
+            flex-wrap: nowrap;
+          }
+          li{
+            margin-right: 10px;
+            @media all and (max-width: $maxwindow){
+              margin-right: px(10);
+            }
+            input{
+              display: none;
+              &:checked + label{
+                background-color: #114BC8;
+                color: #FFFFFF;
+                &:after{
+                  opacity: 1;
+                  transform: rotate(0);
+                }
+              }
+            }
+            label{
+              border-radius: 5px;
+              background: #F5FAFF;
+              padding: 5px 30px;
+              color: #1A2B50;
+              font-size: 14px;
+              font-weight: 400;
+              height: 30px;
+              display: inline-flex;
+              align-items: center;
+              position: relative;
+              cursor: pointer;
+              transition: 0.2s ease-in-out;
+              white-space: nowrap;
+              @media all and (max-width: $maxwindow){
+                padding: px(5) px(30);
+                font-size: px(14);
+                border-radius: px(5);
+                height: px(30);
+              }
+              @media all and (max-width: 500px) {
+                font-size: px(12);
+                padding: px(4) px(30);
+              }
+              &:after{
+                content: "";
+                display: block;
+                background-image: url("../../img/checkbox.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: absolute;
+                width: 9px;
+                height: 9px;
+                top: calc(50% - 5px);
+                right: 13px;
+                opacity: 1;
+                transform: rotate(-45deg);
+                transition: 0.2s ease-in-out;
+                @media all and (max-width: $maxwindow){
+                  width: px(10);
+                  height: px(10);
+                  right: px(13);
+                  top: calc(50% - px(5));
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

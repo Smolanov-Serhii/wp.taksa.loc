@@ -1,0 +1,103 @@
+.wwu{
+  background-color: #1A2B50;
+  padding: 216px 0 129px 0;
+  @media all and (max-width: $maxwindow){
+    padding: px(216) 0 px(129) 0;
+  }
+  @media all and (max-width: 1024px){
+    padding: px(120) 0;
+  }
+  @media all and (max-width: 500px){
+    padding: px(50) 0 px(60) 0;
+  }
+  &__container{
+
+  }
+  &__title{
+    color: #FFFFFF;
+    margin-bottom: 60px;
+    @media all and (max-width: $maxwindow){
+      margin-bottom: px(60);
+    }
+    @media all and (max-width: 500px){
+      margin-bottom: px(30);
+    }
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item{
+    width: calc(33.333% - 20px);
+    margin-bottom: 87px;
+    @media all and (max-width: $maxwindow){
+      width: calc(33.333% - px(20));
+      margin-bottom: px(87);
+    }
+    @media all and (max-width: 1024px){
+      width: calc(50% - px(40));
+      margin-bottom: px(50);
+    }
+    @media all and (max-width: 768px){
+      width: 100%;
+      margin-bottom: px(40);
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    &-icon{
+      width: 65px;
+      height: 65px;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      @media all and (max-width: $maxwindow){
+        margin-bottom: px(20);
+        width: px(65);
+        height: px(65);
+      }
+      img, .lottie-anim{
+        @media all and (max-width: 500px){
+          height: px(65);
+          width: auto;
+        }
+      }
+    }
+    &-title{
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 150%;
+      margin-bottom: 5px;
+      text-align: center;
+      @media all and (max-width: $maxwindow){
+        font-size: px(24);
+        margin-bottom: px(5);
+      }
+      @media all and (max-width: 1024px){
+        font-size: px(20);
+      }
+      @media all and (max-width: 500px){
+        font-size: px(16);
+      }
+    }
+    &-desc{
+      color: #FFF;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: normal;
+      @media all and (max-width: $maxwindow){
+        font-size: px(16);
+      }
+      @media all and (max-width: 1024px){
+        font-size: px(15);
+      }
+      @media all and (max-width: 500px){
+        font-size: px(14);
+      }
+    }
+  }
+}
